@@ -1,0 +1,87 @@
+:root {
+    --container-color: #d1d3d5;
+    --container2-color: rgb(64, 87, 203);
+    --second-color: rgb(36, 7, 197);
+    --text-color: #172317;
+    --text2-color: #0a0c27;
+    --bg-color: #ffffff;
+    --bg-color2: rgb(43, 39, 158);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 20px;
+}
+h1{
+    color: rgb(248 248 249);
+    background-color: rgb(36, 7, 197);
+    font-size: 2em;
+    margin-bottom: 20px;
+    padding: 20px;
+    margin-top: 0px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: color 0.3s ease;
+    /* border: 1px solid red; */
+}
+
+
+
+h1:hover {
+    color: var(--text2-color);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    color: var(--text2-color);
+    background-color: var(--container-color);
+    transition: background-color 0.3s ease;
+}
+
+table:hover {
+    background-color: var(--container2-color);
+}
+
+.serial-no-header, .serial-no {
+    width: 70px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    color: var(--bg-color2);
+}
+
+th {
+    background-color: var(--second-color);
+    color: var(--bg-color);
+}
+
+a {
+    color: var(--second-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+    color: var(--text-color);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+tbody tr:hover {
+    background-color: var(--bg-color2);
+    color: var(--bg-color);
+}
+
+tbody tr:hover a {
+    color: var(--bg-color);
+}

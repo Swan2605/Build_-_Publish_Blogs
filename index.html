@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="me.jpg" type="image/x-icon">
+    <title>My Blogs</title>
+    <!-- Box-icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="nav container">
+            <a href="#" class="logo">My<span>Blogs</span></a>
+            <a href="blog.html" class="login">Write Your's</a>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-text container">
+            <h2 class="home-title">Insight Pulse</h2>
+            <span class="home-subtitle">Discover the Pulse of What's New and Now</span>
+        </div>
+    </section>
+
+    <section class="about container" id="about">
+        <div class="contentBx">
+            <h2 class="titleText">Catch up with the trendings</h2>
+            <p class="title-text">
+                Welcome to our blog, your go-to destination for the latest trends and insights across various fields. Whether you're a tech enthusiast, a lifestyle guru, or just someone looking to stay informed, we've got something for everyone.
+                <br><br>
+                Our team of passionate writers and industry experts are dedicated to bringing you in-depth articles, thought-provoking opinions, and comprehensive guides that cover everything from the newest gadgets and breakthrough technologies to health tips and travel hacks.
+                <br><br>
+                Thank you for being a part of our journey. Let's stay curious and informed together!
+            </p>
+            <a href="read.html" class="btn2">Read more</a>
+        </div>
+        <div class="imgBx">
+            <img src="i3.jpg" alt="" class="fitBg">
+        </div>
+    </section>
+
+    <div class="post-filter container">
+        <span class="filter-item active-filter" data-filter="all">All</span>
+        <span class="filter-item" data-filter="tech">Tech</span>
+        <span class="filter-item" data-filter="food">Food</span>
+        <span class="filter-item" data-filter="news">News</span>
+    </div>
+    <!-- <div class="post-filter container">
+        <ul class="dropdown-content">
+            <li class="filter-item dropdown" data-filter="all" onclick="toggleDropdown()">
+                All <span class="arrow">&#9662;</span>
+                <ul class="dropdown-content nested">
+                    <li class="filter-item" data-filter="tech" onclick="showSubmenu(event)">Tech</li>
+                    <li class="filter-item" data-filter="food" onclick="showSubmenu(event)">Food</li>
+                    <li class="filter-item" data-filter="news" onclick="showSubmenu(event)">News</li>
+                </ul>
+            </li>
+        </ul>
+    </div> -->
+    
+    
+    <div class="post container">
+        <!-- Post 1 -->
+        <div class="post-box tech" onclick="openPopup('popup1')">
+            <img src="img1.jpg" alt="" class="post-img">
+            <h2 class="category">Tech</h2>
+            <a href="https://techcrunch.com/" class="post-title">Latest Tips for Learning the MERN </a>
+            <span class="post-date">12 Jan 2024</span>
+            <p class="post-description">Discover essential tips and tricks for creating stunning user interfaces with Figma. Enhance your design skills and streamline your workflow with these expert insights.</p>
+            <div class="profile">
+                <img src="me.jpg" alt="" class="profile-img">
+                <span class="profile-name">SJ</span>
+            </div>
+        </div>
+        <div id="popup1" class="popup">
+            <button class="close-btn" onclick="closePopup('popup1')">Close</button>
+            <a href="https://techcrunch.com/">
+                <img src="img1.jpg" alt="" class="post-img">
+            </a>
+            <h2 class="category">Tech</h2>
+            <a href="#" class="post-title">Latest Tips for Learning MERN</a>
+            <span class="post-date">12 Jan 2024</span>
+            <p class="post-description">Discover essential tips and tricks for creating stunning user interfaces with Figma. Enhance your design skills and streamline your workflow with these expert insights.</p>
+        </div>
+        
+        <div class="overlay" onclick="closePopup('popup1')"></div>
+        <!-- Post 2 -->
+        <div class="post-box food" onclick="openPopup('popup2')">
+            <img src="img2.jpg" alt="" class="post-img">
+            <h2 class="category">Food</h2>
+            <a href="#" class="post-title">The Ultimate Guide to Perfect Pasta</a>
+            <span class="post-date">15 Feb 2024</span>
+            <p class="post-description">Learn how to cook the perfect pasta every time with our comprehensive guide. From selecting the right ingredients to mastering cooking techniques, we've got you covered.</p>
+            <div class="profile">
+                <img src="me.jpg" alt="" class="profile-img">
+                <span class="profile-name">SJ</span>
+            </div>
+        </div>
+        <div id="popup2" class="popup">
+            <button class="close-btn" onclick="closePopup('popup2')">Close</button>
+            <img src="img2.jpg" alt="" class="post-img">
+            <h2 class="category">Tech</h2>
+            <a href="#" class="post-title">The Ultimate Guide to Perfect Pasta</a>
+            <span class="post-date">15 Feb 2024</span>
+            <p class="post-description">Learn how to cook the perfect pasta every time with our comprehensive guide. From selecting the right ingredients to mastering cooking techniques, we've got you covered.</p>
+        </div>
+        
+        <div class="overlay" onclick="closePopup('popup2')"></div>
+        <!-- Post 3 -->
+        <div class="post-box food" onclick="openPopup('popup3')">
+            <img src="img3.jpg" alt="" class="post-img">
+            <h2 class="category">Food</h2>
+            <a href="#" class="post-title">Exploring Exotic Fruits: A Culinary Adventure</a>
+            <span class="post-date">20 Mar 2024</span>
+            <p class="post-description">Join us on a culinary adventure as we explore exotic fruits from around the world. Learn about their unique flavors, nutritional benefits, and how to incorporate them into your diet.</p>
+            <div class="profile">
+                <img src="me.jpg" alt="" class="profile-img">
+                <span class="profile-name">SJ</span>
+            </div>
+        </div>
+        <div id="popup3" class="popup">
+            <button class="close-btn" onclick="closePopup('popup3')">Close</button>
+            <img src="img3.jpg" alt="" class="post-img">
+            <h2 class="category">Tech</h2>
+            <a href="#" class="post-title">Exploring Exotic Fruits: A Culinary Adventure</a>
+            <span class="post-date">20 Mar 2024</span>
+            <p class="post-description">Join us on a culinary adventure as we explore exotic fruits from around the world. Learn about their unique flavors, nutritional benefits, and how to incorporate them into your diet.</p>
+        </div>
+        
+        <div class="overlay" onclick="closePopup('popup3')"></div>
+        <!-- Post 4 -->
+        <div class="post-box news" onclick="openPopup('popup4')">
+            <img src="img4.jpg" alt="" class="post-img">
+            <h2 class="category">News</h2>
+            <a href="#" class="post-title">Breaking: Major Tech Merger Announced</a>
+            <span class="post-date">25 Apr 2024</span>
+            <p class="post-description">In a groundbreaking move, two leading tech companies have announced a major merger. Read on for exclusive details and insights into what this means for the industry.</p>
+            <div class="profile">
+                <img src="me.jpg" alt="" class="profile-img">
+                <span class="profile-name">SJ</span>
+            </div>
+        </div>
+        <div id="popup4" class="popup">
+            <button class="close-btn" onclick="closePopup('popup4')">Close</button>
+            <img src="img4.jpg" alt="" class="post-img">
+            <h2 class="category">Tech</h2>
+            <a href="#" class="post-title">Breaking: Major Tech Merger Announced</a>
+            <span class="post-date">25 Apr 2024</span>
+            <p class="post-description">In a groundbreaking move, two leading tech companies have announced a major merger. Read on for exclusive details and insights into what this means for the industry.</p>
+        </div>
+        
+        <div class="overlay" onclick="closePopup('popup4')"></div>
+        <!-- Post 5 -->
+        <div class="post-box tech" onclick="openPopup('popup5')">
+            <img src="img5.jpg" alt="" class="post-img">
+            <h2 class="category">Tech</h2>
+            <a href="https://techcrunch.com/" class="post-title">Top 10 AI Innovations Shaping the Future</a>
+            <span class="post-date">10 May 2024</span>
+            <p class="post-description">Explore the top 10 AI innovations that are set to transform our world. From healthcare to transportation, discover how artificial intelligence is reshaping industries.</p>
+            <div class="profile">
+                <img src="me.jpg" alt="" class="profile-img">
+                <span class="profile-name">SJ</span>
+            </div>
+        </div>
+        <div id="popup5" class="popup">
+            <button class="close-btn" onclick="closePopup('popup5')">Close</button>
+            <a href="https://techcrunch.com/">
+                <img src="img5.jpg" alt="" class="post-img">
+            </a>
+            <h2 class="category">Tech</h2>
+            <a href="https://techcrunch.com/" class="post-title">Top 10 AI Innovations Shaping the Future</a>
+            <span class="post-date">10 May 2024</span>
+            <p class="post-description">Explore the top 10 AI innovations that are set to transform our world. From healthcare to transportation, discover how artificial intelligence is reshaping industries.</p>
+        </div>
+        
+        <div class="overlay" onclick="closePopup('popup5')"></div>
+        <!-- Post 6 -->
+        <div class="post-box news" onclick="openPopup('popup6')">
+            <img src="img6.jpg" alt="" class="post-img">
+            <h2 class="category">News</h2>
+            <a href="#" class="post-title">Global Market Trends: Mid-Year Report</a>
+            <span class="post-date">15 July 2024</span>
+            <p class="post-description">Our mid-year report on global market trends highlights key developments and predictions for the remainder of the year. Stay informed with our expert analysis.</p>
+            <div class="profile">
+                <img src="me.jpg" alt="" class="profile-img">
+                <span class="profile-name">SJ</span>
+            </div>
+        </div>
+        <div id="popup6" class="popup">
+            <button class="close-btn" onclick="closePopup('popup6')">Close</button>
+            <img src="img6.jpg" alt="" class="post-img">
+            <h2 class="category">Tech</h2>
+            <a href="#" class="post-title">Global Market Trends: Mid-Year Report</a>
+            <span class="post-date">15 Jul 2024</span>
+            <p class="post-description">Our mid-year report on global market trends highlights key developments and predictions for the remainder of the year. Stay informed with our expert analysis.</p>
+        </div>
+        
+        <div class="overlay" onclick="closePopup('popup6')"></div>
+        <!-- Post 7 -->
+        <div class="post-box tech" onclick="openPopup('popup7')">
+            <img src="img7.jpg" alt="" class="post-img">
+            <h2 class="category">Tech</h2>
+            <a href="https://techcrunch.com/" class="post-title">The Rise of Quantum Computing: What You Need to Know</a>
+            <span class="post-date">22 July 2024</span>
+            <p class="post-description">Quantum computing is on the rise, promising to revolutionize technology. Learn what you need to know about this cutting-edge field and its potential impact.</p>
+            <div class="profile">
+                <img src="me.jpg" alt="" class="profile-img">
+                <span class="profile-name">SJ</span>
+            </div>
+        </div>
+        <div id="popup7" class="popup">
+            <button class="close-btn" onclick="closePopup('popup7')">Close</button>
+            <a href="https://techcrunch.com/">
+                <img src="img7.jpg" alt="" class="post-img">
+            </a>
+            <h2 class="category">Tech</h2>
+            <a href="https://techcrunch.com/" class="post-title">The Rise of Quantum Computing: What You Need to Know</a>
+            <span class="post-date">22 July 2024</span>
+            <p class="post-description">Quantum computing is on the rise, promising to revolutionize technology. Learn what you need to know about this cutting-edge field and its potential impact.</p>
+        </div>
+        
+        <div class="overlay" onclick="closePopup('popup7')"></div>
+        <!-- Post 8 -->
+        <div class="post-box news" onclick="openPopup('popup8')">
+            <img src="img8.jpg" alt="" class="post-img">
+            <h2 class="category">News</h2>
+            <a href="#" class="post-title">Climate Change: Urgent Actions Needed</a>
+            <span class="post-date">30 July 2024</span>
+            <p class="post-description">As climate change accelerates, urgent actions are needed to mitigate its effects. Read our in-depth report on the latest developments and what can be done to combat this global issue.</p>
+            <div class="profile">
+                <img src="me.jpg" alt="" class="profile-img">
+                <span class="profile-name">SJ</span>
+            </div>
+        </div>
+        <div id="popup8" class="popup">
+            <button class="close-btn" onclick="closePopup('popup8')">Close</button>
+            <img src="img8.jpg" alt="" class="post-img">
+            <h2 class="category">Tech</h2>
+            <a href="#" class="post-title">Climate Change: Urgent Actions Needed</a>
+            <span class="post-date">30 July 2024</span>
+            <p class="post-description">As climate change accelerates, urgent actions are needed to mitigate its effects. Read our in-depth report on the latest developments and what can be done to combat this global issue.</p>
+        </div>
+        
+        <div class="overlay" onclick="closePopup('popup8')"></div>
+        <!-- Post 9 -->
+        <div class="post-box food" onclick="openPopup('popup9')">
+            <img src="img10.jpg" alt="" class="post-img">
+            <h2 class="category">Food</h2>
+            <a href="#" class="post-title">5 Easy Recipes for Quick Weeknight Dinners</a>
+            <span class="post-date">12 July 2024</span>
+            <p class="post-description">Busy weeknights call for quick and easy recipes. Check out our top 5 recipes that are simple to prepare and perfect for those hectic evenings.</p>
+            <div class="profile">
+                <img src="me.jpg" alt="" class="profile-img">
+                <span class="profile-name">SJ</span>
+            </div>
+        </div>
+        <div id="popup9" class="popup">
+            <button class="close-btn" onclick="closePopup('popup9')">Close</button>
+            <img src="img10.jpg" alt="" class="post-img">
+            <h2 class="category">Tech</h2>
+            <a href="#" class="post-title">5 Easy Recipes for Quick Weeknight Dinners</a>
+            <span class="post-date">12 July 2024</span>
+            <p class="post-description">Busy weeknights call for quick and easy recipes. Check out our top 5 recipes that are simple to prepare and perfect for those hectic evenings.</p>
+        </div>
+        
+        <div class="overlay" onclick="closePopup('popup9')"></div>
+    </div>
+    
+
+    <footer>
+        <div class="footer-container">
+            <div class="sec aboutus">
+                <h2>About Us</h2>
+                <p>Whether you're looking for expert advice, personal growth stories, or the latest trends, you'll find it all here. Join our community and stay connected with the pulse of the world through our thoughtfully curated posts.</p>
+                <ul class="sci">
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="bx bxl-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><i class="bx bxl-instagram"></i></a></li>
+                    <li><a href="https://www.twitter.com/" target="_blank"><i class="bx bxl-twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/" target="_blank"><i class="bx bxl-linkedin"></i></a></li>
+                </ul>
+            </div>
+            <div class="sec quicklinks">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+            <div class="sec contactBx">
+                <h2>Contact Info</h2>
+                <ul class="info">
+                    <li>
+                        <a href="https://www.google.com/maps/place/MIT+World+Peace+University+(MIT-WPU)/@18.5177559,73.8151112,17z/data=!3m1!4b1!4m6!3m5!1s0x3bc2bfb9e53a05f9:0x2be5e8da02be693e!8m2!3d18.5177559!4d73.8151112!16s%2Fm%2F04d_4lg?entry=ttu" target="_blank">
+                        <span><i class='bx bxs-map'></i></span>
+                        <span>Kothrud, <br> Pune<br> Maharashtra</span>
+                        </a>
+                    </li>
+                    <li>
+                        <span><i class='bx bx-envelope' ></i></span>
+                        <p><a href="mailto:codemyhobby9@gmail.com">suhani1110jazz@gmail.com</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js"></script>
+</body>
+</html>
